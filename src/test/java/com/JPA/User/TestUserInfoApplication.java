@@ -1,5 +1,6 @@
 package com.JPA.User;
 
+import com.sghosh.User.UserInfoApplication;
 import org.springframework.boot.SpringApplication;
 
 public class TestUserInfoApplication {
