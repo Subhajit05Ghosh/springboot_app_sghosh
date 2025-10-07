@@ -31,3 +31,10 @@ Spring Security returns a populated Authentication object (with user details, ro
 If invalid, it throws a BadCredentialsException or similar.
 
 While generating secret key need to pass bytes as input for HMACSHA256 algorithm. So string to byte decode is required.
+-------------------------------------------------------------------------------------------------------------
+
+🔐 Client sends request with JWT token in the Authorization header
+
+✅ Your jwtFilter is called:Extracts the token, Verifies it, Loads user details,Sets authentication in the security context
+🔄 Spring Security now treats the request as authenticated
+
